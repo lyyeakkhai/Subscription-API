@@ -4,7 +4,7 @@ import SubscriptionRoute from './routes/subscription.rounte.js';
 import AuthRoute from './routes/auth.route.js';
 import UserRoute from './routes/user.route.js';
 import connectToDatabase from "./database/mongodb.js";
-import errorMiddleware from './model/middlewares/error.middleware.js';
+import errorMiddleware from './middlewares/error.middleware.js';
 import cookieParser from 'cookie-parser';
 
 
