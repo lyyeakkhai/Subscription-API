@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
 );
 
 // note model name must be start with capital letter
-const user = mongoose.model("User", userSchema); // creating user model 
+const User = mongoose.model("User", userSchema); // creating user model 
 
 // dont forget to export the model
-export default user;
+export default User;

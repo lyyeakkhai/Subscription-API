@@ -2,9 +2,9 @@ import Router from 'express';
 
 const SubscriptionRoute = Router();
 
-SubscriptionRoute.get('/', (req, res) => res.send({title : 'GETS all subscriptions'}));
+SubscriptionRoute.get('/');
 
-SubscriptionRoute.get('/:id', (req, res) => res.send({title : 'GETS subscription id detail'}));
+SubscriptionRoute.get('/:id');
 
 SubscriptionRoute.post('/', (req, res) => res.send({title : 'creates subscription'}));
 
