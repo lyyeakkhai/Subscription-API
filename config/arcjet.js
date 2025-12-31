@@ -1,5 +1,5 @@
-import { arcjet, shield, detectBot, tokenBucket } from "@arcjet/nodejs-sdk";
-import { ARCJET_KEY } from "./env";
+import arcjet , { shield, detectBot, tokenBucket } from "@arcjet/node";
+import { ARCJET_KEY } from "./env.js";
 
 
 

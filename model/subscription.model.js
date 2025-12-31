@@ -85,7 +85,7 @@ const SubscriptionSchema = new mongoose.Schema({
 // when user subscription we dont need user to pass the renewal every time they subscribe or new user create subscription
 // we can create a function which calculate the date when ever user connitue the subscription monthly or yearly 
 // this function will update the renewalDate field before saving the document
-SubscriptionSchema.pre("save", function (next) {
+SubscriptionSchema.pre("save", async function() {
     
     // when user connitnue subscription we will update the renewalDate automatically
 
@@ -120,7 +120,6 @@ SubscriptionSchema.pre("save", function (next) {
 
     // we call next to move to the next middleware or save the document
     // because when we using pre save the operation save is paused to run presave function then middleware we need to call next to move to the next step
-    next();
 });
 
 
